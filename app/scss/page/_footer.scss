@@ -1,0 +1,86 @@
+.footer {
+    padding: 120px 0 60px;
+    text-align: center;
+
+    &__logo {
+        margin-bottom: 15px;
+    }
+
+    &__info-icon-list {
+        margin-bottom: 50px;
+    }
+
+    &__info-icon-item {
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #646464;
+        background-color: transparent;
+        color: #111;
+        cursor: pointer;
+        margin-right: 15px;
+        transition-duration: 1s;
+        transition-timing-function: ease; 
+        outline: none;
+
+        .fa-facebook-f {
+            transform: rotate(-45deg);
+        }
+
+        .fa-twitter {
+            transform: rotate(-45deg);
+        }
+
+        .fa-behance {
+            transform: rotate(-45deg);
+        }
+
+        .fa-linkedin-in {
+            transform: rotate(-45deg);
+        }
+
+        .fa-pinterest {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            background-color: #111111;
+            color: #ffffff;
+        }
+    }
+
+    &__copy-text {
+        font-family: 'Dosis', Helvetica, Arial, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #111111;
+        letter-spacing: 0.133em;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__copy-description {
+        font-size: 0.667em;
+        color: #aaa;
+    }
+}
+#toTop {
+	width:100px;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:15px;
+	right:15px;
+	cursor:pointer;
+	display:none;
+	color:#aaa;
+	font-size:35px;
+    z-index: 2;
+    transition: color 1s ease;
+    
+    &:hover {
+        color: #111;
+    }
+}

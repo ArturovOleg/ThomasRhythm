@@ -1,0 +1,34 @@
+.newsletter {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f8f8f8;;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__info {
+        font-size: 10px;
+        color: #aaa;
+        
+    }
+}
+
+.newsletter-form {
+    max-width: 450px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__email-input {
+        flex-grow: 2;
+    }
+
+    &__subscribe {
+        flex-grow: 1;
+    }
+
+    
+}
+

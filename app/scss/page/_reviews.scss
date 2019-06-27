@@ -1,0 +1,258 @@
+.reviews {
+    background: url(../img/section-bg-3.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    overflow: hidden;
+
+    &__slider-container {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    
+
+    &__slider-card {
+        padding: 120px 0;
+        text-align: center;
+        outline: none;
+    }
+
+    &__icon {
+        font-size: 30px;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__info-text {
+        max-width: 640px;
+        margin: 0 auto;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    &__author {
+        font-weight: 300;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.133rem;
+    }
+
+}
+
+
+
+.slick-arrow {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 90px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.slick-arrow.slick-prev {
+	left: -45px;
+}
+
+.slick-arrow.slick-next {
+	right: -45px;
+}
+
+.slick-arrow {
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        width: 63px;
+        height: 63px;
+        margin-top: -31px;
+        margin-left: -32px;
+        background-color: #fff;
+        transform: rotate(-45deg);
+    }
+}
+
+.slick-arrow.slick-next{ 
+    .carousel-button {
+	    right: 0;
+        margin-right: -32px;
+    }
+}
+
+.slick-arrow {
+    .carousel-button {
+        .fa {
+            position: absolute;
+            transform: rotate(45deg);
+            font-size: .67rem;
+            color: #222;
+        }
+    }
+}
+
+.slick-arrow.slick-prev { 
+    .carousel-button { 
+        .fa {
+            bottom: 13px;
+            right: 15px;
+        }
+    }
+}
+
+.slick-arrow.slick-next {
+    .carousel-button {
+        .fa {
+            top: 13px;
+            left: 15px;
+        }
+    }
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+    line-height: 0;
+    display: none;
+}
+
+.slick-dots li {
+	display: inline-block;
+	vertical-align: center;
+	position: relative;
+	width: 14px;
+	height: 14px;
+}
+
+.slick-dots li button {
+	width: 7px;
+	height: 7px;
+	color: transparent;
+	font-size: 0;
+	background-color: #ccc;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slick-dots li button::after {
+	content: '';
+	width: 9px;
+	height: 9px;
+	background-color: #111;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.slick-dots li.slick-active button::after {
+	opacity: 1;
+}
+.slider-init {
+	outline: none;
+} 
+
+.reviews:hover .slick-arrow.slick-next {
+    animation: move-next 0.5s ease forwards;
+}
+
+.reviews:hover .slick-prev.slick-prev {
+    animation: move-prev 0.5s ease forwards;
+}
+
+.slick-arrow.slick-next {
+    animation: move-next-1 0.5s ease forwards;
+}
+
+.slick-prev.slick-prev {
+    animation: move-prev-1 0.5s ease forwards;
+}
+
+@media (max-width: 767px) {
+    .reviews {
+        &__title {
+            font-size: 0.8rem;
+        }
+
+        &__info-text {
+            font-size: 0.6rem;
+        }
+
+        &__slider-card {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    .slick-list {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@keyframes move-next {
+    from{
+        right: -45px;
+    } 
+    to {
+        right: 0;
+    }
+}
+
+@keyframes move-prev {
+    from{
+        left: -45px;
+    } 
+    to {
+        left: 0;
+    }
+}
+
+@keyframes move-next-1 {
+    from{
+        right: 0;
+    } 
+    to {
+        right: -45px;
+    }
+}
+
+@keyframes move-prev-1 {
+    from{
+        left: 0;
+    } 
+    to {
+        left: -45px;
+    }
+}
+ 
+.reviews:hover .slick-arrow.slick-next {
+    animation: move-next 0.5s ease forwards;
+}
+
+.reviews:hover .slick-prev.slick-prev {
+    animation: move-prev 0.5s ease forwards;
+}
+
+.slick-arrow.slick-next {
+    animation: move-next-1 0.5s ease forwards;
+}
+
+.slick-prev.slick-prev {
+    animation: move-prev-1 0.5s ease forwards;
+}
+
+

@@ -1,0 +1,56 @@
+.map {
+    position: relative;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .9);
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    &__overlay-info {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__overlay-info-icon {
+        display: inline-block;
+        background-color: #fff;
+        text-align: center;
+        color: #111111;
+        margin-bottom: 30px;
+    }
+
+    &__overlay-info-text {
+        font-family: 'Dosis', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 4px; 
+    }
+
+    &:hover {
+        .map {
+            &__overlay {
+                opacity: 0;
+            }
+        }
+    }
+
+    .fa-map-marker-alt {
+        transform: rotate(-45deg);
+    }
+
+}

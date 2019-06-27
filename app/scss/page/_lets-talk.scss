@@ -1,0 +1,50 @@
+.lets-talk {
+    background: url(../img/section-bg-2.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__info-text {
+        margin-bottom: 50px;
+    }
+
+    &__picture-item {
+        margin-top: -32px;
+    }
+
+    &__text {
+        padding: 120px 0 50px 10px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .lets-talk {
+        &__picture-item {
+            margin-top: -20px;
+        }
+
+        &__text {
+            padding: 70px 0 30px 10px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .lets-talk {
+        &__title {
+            font-size: 0.8rem;
+        }
+
+        &__info-text {
+            font-size: 0.7rem;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            padding: 30px 0 30px 10px;
+        }
+    }
+}

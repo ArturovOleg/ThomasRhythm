@@ -1,0 +1,136 @@
+.contact {
+    padding: 120px 0;
+
+    &__title {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    &__contact-list {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__contact-row {
+        margin: 0 auto;
+    }
+
+    &__form-container {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    &__input-col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__text-area-col {
+        flex-grow: 1;
+    }
+
+    &__text-area {
+        width: 100%;    
+        height: 100%;
+        padding: 12px 15px;
+        margin: 0 5px 5px 0;
+    }
+
+    &__input-name {
+        height: 40px;
+        margin: 0 5px 5px 0;
+    }
+
+    &__input-email {
+        height: 40px;
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__submit-info {
+        font-family: 'Opensans', Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        color: #aaa;
+    }
+
+    &__submit-button {
+        padding: 12px 24px;
+    }
+}
+
+.contact-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+
+    .fa-phone {
+        transform: rotate(45deg);
+    }
+    
+    .fa-envelope {
+        transform: rotate(-45deg);
+    }
+    
+    .fa-map-marker-alt {
+        transform: rotate(-45deg);
+    }
+
+    &__icon {
+        position: absolute;
+		color: #ffffff;
+        background-color: #111111;
+
+    }
+
+    &__text {
+        margin-left: 40px;
+    }
+
+    &__text-point {
+        display: block;
+        font-family: 'Dosis', Helvetica, Arial, sans-serif;
+        font-size: 0.667em;
+        text-transform: uppercase;
+        color: #111111;
+        letter-spacing: 0.200em;
+
+    }
+
+    &__text-value {
+        display: block;
+        color: #111111;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .contact-item {
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        &__form-container {
+            display: block;
+        }
+
+        &__input-name {
+            display: block;
+            width: 100%;
+        }
+
+        &__input-email {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+}

@@ -1,0 +1,102 @@
+// default-classes
+.title-black {
+    font-family: 'Dosis', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.4rem;
+}
+
+.title-white {
+    font-family: 'Dosis', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.4rem;
+}
+
+.blockquote-text {
+    font-weight: 300; 
+    font-size: 1.6em;
+}
+
+.name {
+    font-family: 'Dosis', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    padding-top: 1rem;
+}
+
+// default-elements
+.button-white {
+    border-radius: 2px;
+    padding: 10px 30px;
+    font-family: 'Dosis',Helvetica, Arial,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #111111;
+    display: inline-block;
+    background-color: #c4c2c2;
+    transition-property: color, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease; 
+    outline: none; 
+    
+    
+
+    &:hover {
+        background-color: #fff;
+        color: #777777;
+    }
+}
+
+.button-black {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 12px 8px;
+    color: #ffffff;
+    background-color: #111111;
+    border-radius: 3px;
+    transition-property: color, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease; 
+    outline: none;
+    
+    &:hover {
+        background-color: #434141;
+        color: #f2eeee;
+    }
+
+}
+
+.input-form {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 0 15px;
+    font-family: 'Opensans', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition-property: color, border;
+    transition-duration: 1s;
+    transition-timing-function: ease; 
+    outline: none;
+
+    &:hover {
+        border: 1px solid gray;
+    }
+}
+
+.rhomb-icon {
+    transform: rotate(45deg);
+	font-size: 12px;
+	text-align: center;
+	width: 23px;
+	line-height: 23px;
+	border-radius: 2px;
+}

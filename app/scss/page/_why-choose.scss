@@ -1,0 +1,43 @@
+.why-choose {
+    padding: 120px 0;
+
+    &__title {
+        font-family: 'Dosis',Helvetica, Arial,sans-serif;
+        font-size: 20px;
+        text-transform:uppercase;
+        color: #111111;
+        letter-spacing: 8px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    &__name {
+        display: block;
+        text-align: center;
+        color: #111111;
+        margin-bottom: 30px;
+    }
+
+    &__icon {
+        text-align: center;
+        font-size: 3.2rem;
+        color: #111111;
+    }
+
+    &__info-text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__row-margin {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:991px) {
+    .why-choose {
+        &__name {
+            font-size: 0.8rem;
+        }
+    }
+}
