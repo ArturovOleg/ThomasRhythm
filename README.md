@@ -1,12 +1,14 @@
 
 Thomas Rhythm (Landing Page_)
 ====================================
+
 1. Theme and essence of the project
 
 Web site design studio 
 (product descriptions, portfolio, blog links, reviews, feedback, contacts)
 
 ====================================
+
 2. Sections
 	1. <-- Header -->
 Main part with poster and site navigation
