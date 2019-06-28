@@ -1,5 +1,6 @@
 
 Thomas Rhythm (Landing Page_)
+
 ====================================
 
 1. Theme and essence of the project
@@ -41,6 +42,7 @@ Last section with logo and social icons
 
 	1. Dosis regular, light
 	2. Open-sans regular, light
+	
 ====================================
 
 4. Plugins 
@@ -48,6 +50,7 @@ Last section with logo and social icons
 	1. jQueri tabs link (https://jqueryui.com/tabs/)
 	2. Slick Slider link (https://kenwheeler.github.io/slick/)
 	3. Slick Nav  link (https://slicknav.io/)
+	
 ====================================
 
 5. Сontrol points
